@@ -38,7 +38,6 @@ nav {
   position: fixed;
   margin-top: 45px;
   z-index: 2;
-  backdrop-filter: blur(15px);
 }
 .logo-class {
   padding: 19px 25px;
