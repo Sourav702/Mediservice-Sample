@@ -31,6 +31,9 @@
   outline: none;
   border: none;
 }
+#upper-btn:hover {
+  background-color: #0663aab7;
+}
 nav {
   background: rgb(0 0 0 / 25%);
   height: 70px;
@@ -78,8 +81,8 @@ nav ul li a {
   height: 120vh;
 }
 .top {
-  background-image: url("./assets/bg2.jpg");
-  height: 53vh;
+  background-image: url("./assets/bg3.jpg");
+  min-height: 53vh;
   background-position: center center;
   background-size: cover;
 }
@@ -92,7 +95,9 @@ nav ul li a {
 .top-icon {
   padding-top: 10px;
 }
-
+.content p {
+  text-align: justify;
+}
 span {
   color: rgb(141 181 241);
 }
@@ -163,6 +168,10 @@ span {
 .part2-img img {
   padding-left: 20px;
 }
+.mid-part1-img {
+  height: max-content;
+  padding: 1.2%;
+}
 @media (max-width: 767px) {
   .checkbtn {
     display: inline-block;
@@ -171,8 +180,8 @@ span {
     position: fixed;
     width: 100%;
     height: 35vh;
-    background: rgb(141 181 241);
-    top: 110px;
+    background: rgb(0 0 0 / 25%);
+    top: 119px;
     left: -100%;
     text-align: center;
     transition: all 0.5s;
@@ -180,6 +189,8 @@ span {
   .logo-class {
     padding-top: 18px;
     padding-left: 8px;
+    padding-bottom: 0;
+    padding-right: 0;
   }
   nav ul li {
     display: block;
@@ -189,8 +200,7 @@ span {
   nav ul li a {
     font-size: 20px;
   }
-  a:hover,
-  a.active {
+  a:hover {
     background: none;
     color: #0663aab7;
   }
@@ -198,19 +208,17 @@ span {
     left: 0;
   }
   .top {
-    height: 55vh;
+    min-height: 35vh;
   }
   .mid {
     height: 45vh;
   }
   .main-container {
-    /* height: 240vh; */
-    height: 250vh;
-    /* padding-top: 10px; */
+    min-height: fit-content;
   }
   .end {
     /* height: 110vh; */
-    height: 110vh;
+    min-height: fit-content;
   }
   .end-2 {
     display: flex;
@@ -273,9 +281,9 @@ span {
 }
 @media (max-width: 426px) {
   .main-container {
-    height: 242vh;
+    min-height: fit-content;
   }
   .end {
-    height: 107vh;
+    min-height: fit-content;
   }
 }
